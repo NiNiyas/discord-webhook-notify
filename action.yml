@@ -1,5 +1,5 @@
 name: Github Actions Discord Webhook Notify
-  author: NiNiyas
+author: NiNiyas
 description: >
   Send notifications to Discord using a webhook.
   Works with all execution environments including windows, macos, and linux.
