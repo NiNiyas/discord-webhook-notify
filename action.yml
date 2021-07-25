@@ -1,0 +1,52 @@
+name: Github Actions Discord Webhook Notify
+  author: NiNiyas
+description: >
+  Send notifications to Discord using a webhook.
+  Works with all execution environments including windows, macos, and linux.
+inputs:
+  webhookUrl:
+    description: Discord webhook URL. Should be stored in a secret and inserted as a context expression.
+    required: true
+  severity:
+    description: Severity level - info, warn, or error
+    required: false
+    default: error
+  description:
+    description: Embed notification message. Use context expressions and environment variables to provide information. Default provides branch and user info.
+    required: false
+  details:
+    description: Additional text after the notification message in case you want to retain the default message.
+    required: false
+  footer:
+    description: Footer for the embed. Defaults to severity.
+    required: false
+  text:
+    description: Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
+    required: false
+  username:
+    description: Webhook username to display in discord.
+    required: false
+  color:
+    description: Hex color codes. Default determined by severity.
+    required: false
+  avatarUrl:
+    description: Webhook logo. Default is the GitHub monochrome mark cat logo.
+    required: false
+  author:
+    description: Discord message author.
+    required: false
+  author_icon:
+    description: Discord author logo.
+    required: false
+  authorUrl:
+    description: Discord message author URL.
+    required: false
+  title:
+    description: Discord message title.
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  color: orange
+  icon: alert-triangle
