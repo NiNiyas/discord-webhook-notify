@@ -10,7 +10,7 @@ Sends a notification to discord using a webhook URL. Forked from https://github.
 `footer`: Footer of embed. Defaults to `severity`. Optional \
 `text`: Text above the embed. Optional \
 `username` : Discord webhook username. Optional \
-`color` : Embed color. Uses hex values. Optional \
+`color` : Embed color. Optional \
 `avatarUrl` : Webhook logo. Use PNG or JPEG link. Optional \
 `author`: Discord embed message author. Defaults to Github Actions. Optional \
 `author_icon`: Discord embed message author logo. Defaults to Github Actions logo. Optional \
